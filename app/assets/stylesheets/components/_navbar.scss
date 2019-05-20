@@ -4,8 +4,11 @@
   i {
     margin: 8px;
   }
+  a {
+    color: #230903;
+  }
   a:visited{
-    text-decoration: none;
+    text-decoration: none !important;
     color: #230903;
   }
   a:hover{
