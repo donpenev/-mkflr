@@ -2,10 +2,15 @@
 
   <div class="mkflr-navbar-operators d-flex align-items-center">
 
-    <div class="mkflr-navbar-menu mkflr-icon">
+    <button class="mkflr-navbar-menu mkflr-icon btn" data-toggle="dropdown">
       <%= link_to "#", class: "" do %>
         <i class="fas fa-bars"></i>
       <% end %>
+    </button>
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+      <a class="dropdown-item" href="#">Action</a>
+      <a class="dropdown-item" href="#">Another action</a>
+      <a class="dropdown-item" href="#">Something else here</a>
     </div>
 
     <!--.d-none .d-sm-block - Hidden only on xs-->
@@ -30,8 +35,8 @@
       ПРОДУКТИ
     </div>
 
-    <div class="mkflr-navbar-cart mkflr-icon">
-      <%= link_to "#", class: "" do %>
+    <div class="mkflr-navbar-cart mkflr-icon dropdown show">
+      <%= link_to "", class: "" do %>
         <i class="fas fa-shopping-cart"></i>
       <% end %>
     </div>
