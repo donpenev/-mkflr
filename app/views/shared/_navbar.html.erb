@@ -2,21 +2,24 @@
 
   <div class="mkflr-navbar-operators d-flex align-items-center">
 
-    <button class="mkflr-navbar-menu mkflr-icon btn" data-toggle="dropdown">
+    <button class="mkflr-navbar-menu mkflr-icon btn " data-toggle="dropdown">
       <%= link_to "#", class: "" do %>
         <i class="fas fa-bars"></i>
       <% end %>
     </button>
     <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-      <a class="dropdown-item" href="#">Action</a>
-      <a class="dropdown-item" href="#">Another action</a>
-      <a class="dropdown-item" href="#">Something else here</a>
+      <a class="dropdown-item" href="#">История на марката</a>
+      <a class="dropdown-item" href="#">Поръчай</a>
+      <div class="dropdown-divider"></div>
+      <a class="dropdown-item" href="#">Контакти</a>
     </div>
 
     <!--.d-none .d-sm-block - Hidden only on xs-->
     <div class="mkflr-tab d-none d-sm-block text-center">
-      Светът на <br/>
-      МОКАЛФОР
+      <%= link_to "", class: "" do %>
+        Светът на <br/>
+        МОКАФЛОР
+      <% end %>
     </div>
 
   </div>
@@ -31,8 +34,10 @@
 
     <!--.d-none .d-sm-block - Hidden only on xs-->
     <div class="mkflr-tab d-none d-sm-block text-center">
-      Всички <br/>
-      ПРОДУКТИ
+      <%= link_to "", class: "" do %>
+        Всички <br/>
+        ПРОДУКТИ
+      <% end %>
     </div>
 
     <div class="mkflr-navbar-cart mkflr-icon dropdown show">
