@@ -1,1 +1,46 @@
+<nav class="navbar mkflr-navbar d-flex justify-content-between align-items-center flex-horizontal-center navbar-expand-xl">
 
+  <div class="mkflr-navbar-operators d-flex align-items-center">
+
+    <button class="mkflr-navbar-menu mkflr-icon btn" data-toggle="dropdown">
+      <%= link_to "#", class: "" do %>
+        <i class="fas fa-bars"></i>
+      <% end %>
+    </button>
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+      <a class="dropdown-item" href="#">Action</a>
+      <a class="dropdown-item" href="#">Another action</a>
+      <a class="dropdown-item" href="#">Something else here</a>
+    </div>
+
+    <!--.d-none .d-sm-block - Hidden only on xs-->
+    <div class="mkflr-tab d-none d-sm-block text-center">
+      Светът на <br/>
+      МОКАЛФОР
+    </div>
+
+  </div>
+
+  <div class="mkflr-navbar-logo d-flex align-items-center" >
+    <%= image_tag "badge.png", class: "", width:"83", height:"50"%>
+    <%= image_tag "moto_grey.png", class: "d-none d-sm-block", width:"83", height:"50"%>
+  </div>
+
+
+  <div class="mkflr-navbar-shopping d-flex align-items-center">
+
+    <!--.d-none .d-sm-block - Hidden only on xs-->
+    <div class="mkflr-tab d-none d-sm-block text-center">
+      Всички <br/>
+      ПРОДУКТИ
+    </div>
+
+    <div class="mkflr-navbar-cart mkflr-icon dropdown show">
+      <%= link_to "", class: "" do %>
+        <i class="fas fa-shopping-cart"></i>
+      <% end %>
+    </div>
+
+  </div>
+
+</nav>

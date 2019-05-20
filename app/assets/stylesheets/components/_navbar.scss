@@ -1,3 +1,83 @@
+.mkflr-navbar {
+  background-color: #FBFCFF;
+  color: #230903;
+  i {
+    margin: 8px;
+  }
+  a:visited{
+    text-decoration: none;
+    color: #230903;
+  }
+  a:hover{
+    opacity: 0.67;
+  }
+  padding: 8px 24px;
+}
+
+.mkflr-tab {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  margin: 0px 8px;
+}
+
+.mkflr-icon {
+  font-size: 24px;
+}
+
+.mkflr-navbar-cart {
+  // border-radius: 5px;
+  // border: 1px solid #230903;
+  a {
+    padding-right:2px
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .navbar-lewagon {
   justify-content: space-between;
   background: white;
