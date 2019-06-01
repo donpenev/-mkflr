@@ -10,21 +10,31 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_05_20_005427) do
+ActiveRecord::Schema.define(version: 2019_06_01_233308) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
+  create_table "order_items", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.bigint "products_id"
+    t.bigint "orders_id"
+    t.index ["orders_id"], name: "index_order_items_on_orders_id"
+    t.index ["products_id"], name: "index_order_items_on_products_id"
+  end
+
   create_table "orders", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.decimal "total_price", precision: 8, scale: 2
   end
 
   create_table "products", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "name"
-    t.float "price"
+    t.decimal "price", precision: 8, scale: 2
     t.integer "size"
     t.string "webcolour"
   end
@@ -42,4 +52,6 @@ ActiveRecord::Schema.define(version: 2019_05_20_005427) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
+  add_foreign_key "order_items", "orders", column: "orders_id"
+  add_foreign_key "order_items", "products", column: "products_id"
 end
