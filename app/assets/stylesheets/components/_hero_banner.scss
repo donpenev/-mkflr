@@ -1,6 +1,28 @@
-.mkflr_home_hero {
-  background-image: image_url("home_hero.jpg");
-  background-size: cover;
+.hero_image {
+  // background-image: image_url("home_hero.jpg");
+  // background-size: cover;
+  // background-position: center;
+  // background-color: #FFFFFF;
+  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.1)), url("home_hero.jpg");
+  background-image: -o-linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.1)), url("home_hero.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.1)), url("home_hero.jpg");
+
+  /* Position and center the image to scale nicely on all screens */
   background-position: center;
-  background-color: #FFFFFF;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+
+  /* Set a specific height */
+  height: 91vh;
 }
+
+.mkflr_hero_text {
+  text-align: center;
+  position: absolute;
+  bottom: 5%;
+  left: 35%;
+  transform: translate(-50%, -50%);
+  color: black;
+}
+
