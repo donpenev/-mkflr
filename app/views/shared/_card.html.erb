@@ -16,13 +16,6 @@
             <i class="fas fa-minus"></i>
           <% end %>
         </div>
-        <div class="mkflr_quantity d-flex justify-content-center align-items-center">
-            <%= form_for @order_item do |f| %>
-              <%= f.hidden_field :product_id, value: product.id %>
-              <%= f.number_field :quantity %>
-              <%= f.submit "Add to cart" %>
-            <% end %>
-        </div>
         <div class="mkflr_radios_incre p-2 d-flex justify-content-end">
           <%= link_to "", class: "" do %>
             <i class="fas fa-plus"></i>
@@ -31,6 +24,13 @@
         <div class="mkflr_add_to_cart_light ml-auto p-2">
           добави в <i class="fas fa-shopping-cart"></i>
         </div>
+      </div>
+      <div class="mkflr_quantity d-flex justify-content-center align-items-center">
+        <%= form_for @order_item do |f| %>
+          <%= f.hidden_field :product_id, value: product.id %>
+          <%= f.number_field :quantity %>
+          <%= f.submit "Add to cart" %>
+        <% end %>
       </div>
     </div>
   </div>
