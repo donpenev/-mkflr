@@ -1,6 +1,8 @@
 class OrderItemsController < ApplicationController
   skip_before_action :authenticate_user!, only: [:create]
 
+  #The [:order_id] value will remain until the browser's cache is cleared
+
   def create
     @order = current_order
     @item = @order.order_items.new(item_params)
