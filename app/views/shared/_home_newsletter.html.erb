@@ -1,16 +1,16 @@
 <%= form_for(@order_item) do |f| %>
-  <% if @contact.errors.any? %>
+  <% if @order_item.errors.any? %>
     <div id="error_explanation">
       <ul>
-      <% @contact.errors.full_messages.each do |msg| %>
+      <% @order_item.errors.full_messages.each do |msg| %>
         <li><%= msg %></li>
       <% end %>
       </ul>
     </div>
   <% end %>
   <div class="field">
-    <%= f.label :email %><br />
-    <%= f.text_field :email %>
+    <%= f.label :quantity %><br />
+    <%= f.text_field :quantity %>
   </div>
   <div class="actions">
     <%= f.submit "Send"%>
