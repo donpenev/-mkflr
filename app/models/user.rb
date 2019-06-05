@@ -5,6 +5,10 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
 
   has_one :account
+
+  def move_to(user)
+    todos.update_all(user_id: user.id)
+  end
 end
 
 # user_signed_in? => boolean
