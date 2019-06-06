@@ -1,18 +1,30 @@
-<%= form_for(@order_item) do |f| %>
-  <% if @order_item.errors.any? %>
-    <div id="error_explanation">
-      <ul>
-      <% @order_item.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
-      <% end %>
-      </ul>
+<div class="newsletter_box">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-xs-12 col-sm-9 col-md-6 col-lg-4">
+        <div class="newsletter_call">
+          <h3>zapishi se</h3>
+          <p>i shte poluchish neshto</p>
+        </div>
+        <%= form_for(@tocontact) do |f| %>
+          <% if @tocontact.errors.any? %>
+            <div id="error_explanation">
+              <ul>
+              <% @tocontact.errors.full_messages.each do |msg| %>
+                <li><%= msg %></li>
+              <% end %>
+              </ul>
+            </div>
+          <% end %>
+          <div class="field">
+            <%= f.label :email %><br />
+            <%= f.text_field :email %>
+          </div>
+          <div class="actions">
+            <%= f.submit "запиши се"%>
+          </div>
+        <% end %>
+      </div>
     </div>
-  <% end %>
-  <div class="field">
-    <%= f.label :quantity %><br />
-    <%= f.text_field :quantity %>
   </div>
-  <div class="actions">
-    <%= f.submit "Send"%>
-  </div>
-<% end %>
+</div>

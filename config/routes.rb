@@ -11,6 +11,8 @@ Rails.application.routes.draw do
 
   post '/order_items', to: 'order_items#create', as: 'order_items'
 
+  post '/tocontact', to: 'tocontact#create', as: 'tocontacts'
+
   resource :cart, only: [:show]
 
 end
