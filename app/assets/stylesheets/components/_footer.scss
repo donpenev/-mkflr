@@ -1,24 +1,46 @@
 .mkflr_footer {
+
+  background-color: #F9FBF2;
   padding-left: 24px;
   padding-right: 24px;
-  margin-bottom: 72px;
   margin-top: 32px;
   padding-top: 16px;
-  border-top: 1px solid grey;
+  padding-bottom: 72px;
+
+  i {
+      margin: 8px;
+      padding:8px;
+      font-size: 32px;
+      font-weight: 300;
+  }
+
+  a {
+    padding: 8px 16px;
+    text-decoration: none !important;
+    color: #230903;
+    font-weight: 400;
+  }
+
+  a:hover{
+    font-weight: 900;
+  }
+
+  a:first-of-type{
+    padding-right: 4px;
+  }
+
 }
 
 .mkflr_footer_tab {
   color: #230903;
   opacity: 0.67;
-  font-family: 'Amatic SC', cursive;
+  font-family: 'Caveat', cursive;
   font-weight: 700;
   font-size: 20px;
   text-align: center;
-  padding: 8px;
 
   a {
     i {
-      margin: 8px;
       font-size: 32px !important;
       font-weight: 500;
     }
@@ -27,11 +49,17 @@
   a:visited{
     text-decoration: none !important;
     color: #230903;
+    i {
+      font-weight: 700;
+    }
   }
 
   a:hover{
     text-decoration: none !important;
     color: #230903;
+    i {
+      font-weight: 700;
+    }
   }
 }
 
@@ -45,5 +73,7 @@
 
   i {
     font-weight: 300;
+    font-size: 16px;
+    margin: 0px;
   }
 }
