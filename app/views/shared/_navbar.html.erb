@@ -1,9 +1,9 @@
-<nav class="navbar mkflr-navbar d-flex justify-content-between align-items-center flex-horizontal-center navbar-expand-xl">
+<nav class="navbar mkflr-navbar sticky-nav d-flex justify-content-between align-items-center flex-horizontal-center navbar-expand-xl">
 
   <div class="mkflr-navbar-operators d-flex align-items-center">
 
     <button class="mkflr-navbar-menu mkflr-icon btn" data-toggle="dropdown">
-      <%= link_to "#", class: "" do %>
+      <%= link_to "", class: "" do %>
         <i class="fas fa-bars"></i>
       <% end %>
     </button>
@@ -25,7 +25,9 @@
   </div>
 
   <div class="mkflr-navbar-logo d-flex align-items-center" >
-    <%= image_tag "badge.png", class: "", width:"83", height:"50"%>
+    <%= link_to "", class: "" do %>
+      <%= image_tag "badge.png", class: "", width:"83", height:"50"%>
+    <% end %>
     <%= image_tag "moto_grey.png", class: "d-none d-sm-block", width:"83", height:"50"%>
   </div>
 
@@ -34,7 +36,7 @@
 
     <!--.d-none .d-sm-block - Hidden only on xs-->
     <div class="mkflr-tab d-none d-sm-block text-center">
-      <%= link_to "", class: "" do %>
+      <%= link_to "/products", class: "" do %>
         Всички <br/>
         ПРОДУКТИ
       <% end %>

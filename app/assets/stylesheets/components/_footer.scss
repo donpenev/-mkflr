@@ -1,9 +1,9 @@
 .mkflr_footer {
 
-  background-color: #F9FBF2;
+  background-color: $floral_white;
   padding-left: 24px;
   padding-right: 24px;
-  margin-top: 32px;
+  margin-top: 0px;
   padding-top: 16px;
   padding-bottom: 72px;
 
@@ -17,22 +17,23 @@
   a {
     padding: 8px 16px;
     text-decoration: none !important;
-    color: #230903;
+    color: $zin_brown;
     font-weight: 400;
   }
 
   a:hover{
-    font-weight: 900;
+    opacity: 1;
   }
 
   a:first-of-type{
     padding-right: 4px;
+    padding-left: 4px;
   }
 
 }
 
 .mkflr_footer_tab {
-  color: #230903;
+  color: $zin_brown;
   opacity: 0.67;
   font-family: 'Caveat', cursive;
   font-weight: 700;
@@ -69,11 +70,15 @@
   padding:8px;
   font-family: 'Montserrat', sans-serif;
   font-weight: 200;
-  font-size: 16px;
+  font-size: 12px;
 
   i {
     font-weight: 300;
-    font-size: 16px;
+    font-size: 12px;
+    margin: 0px;
+  }
+
+  p {
     margin: 0px;
   }
 }
