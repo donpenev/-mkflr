@@ -1,22 +1,26 @@
 <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
   <div class="card mkflr_card">
-    <div class="mkflr_card_image">
-      <div class="mkflr_card_price d-flex justify-content-center align-items-center">
-        <p>
-          <%= product.price %> </br> лв.
-        </p>
-      </div>
+    <div class="mkflr_product_pic">
+      <% if product.product_pic.blank? %>
+        <%= link_to product_path(product) do %>
+          <%= image_tag "choco.png", class: "mkflr_product_pic_no_pic"%>
+        <% end %>
+      <% else %>
+        <%= link_to product_path(product) do %>
+          <%= image_tag product.product_pic %>
+        <% end %>
+      <% end %>
     </div>
-    <div class="mkflr_card_colour"></div>
+    <div class="mkflr_card_colour" style="background-color: <%= product.webcolour %>"></div>
     <div class="mkflr_card_infos">
-      <div class="mkflr_button_quickbuy">
+      <div class="d-flex mkflr_quickbuy_heading justify-content-center align-items-center">
         <%= product.name %>
       </div>
       <div class="d-flex justify-content-center align-items-center">
         <%= simple_form_for @order_item, html: { class: "d-flex" } do |f| %>
-          <%= f.input_field :product_id, value: product.id, as: :hidden %>
-          <%= f.input_field :quantity, label: false, error: 'Моля, въведете валидно количество ☺️', placeholder: 1, error_html: {}%>
-          <%= f.button :submit%>
+        <%= f.input_field :product_id, value: product.id, as: :hidden %>
+        <%= f.input_field :quantity, label: false, error: 'Моля, въведете валидно количество ☺️', placeholder: 1, error_html: {}%>
+        <%= f.button :submit%>
         <% end %>
       </div>
     </div>

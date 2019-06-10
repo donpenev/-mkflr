@@ -5,6 +5,11 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+# OrderItem.all.destroy_all
+# Order.all.destroy_all
+# Product.all.destroy_all
+
 puts "-----------------------------------------------------"
 puts "creating the admin and some sample users"
   User.create(email: "doncho@mokaflor.com", password: "123123")
@@ -16,6 +21,7 @@ puts "-----------------------------------------------------"
 
 puts "-----------------------------------------------------"
 puts "creating some accounts"
+  Account.all.destroy_all
   account1 = Account.new
   account1.user = User.all[0]
   account1.save
@@ -33,6 +39,7 @@ puts "-----------------------------------------------------"
 
 puts "-----------------------------------------------------"
 puts "creating some orders"
+
   order1 = Order.new
   order1.account = Account.all[0]
   order1.save
@@ -68,7 +75,8 @@ puts "creating the database of MKFLR coffees"
   Product.create(name:"Guatemala Antigua pastores",
                  webcolour:"#4693CA",
                  size: 250,
-                 price: 15.66)
+                 price: 15.66,
+                 product_pic: "vanille.png")
   Product.create(name:"Mexico Altura",
                  webcolour:"#0E6F25",
                  size: 250,
@@ -107,7 +115,8 @@ puts "creating the database of MKFLR coffees"
   Product.create(name:"Chiaroscuro Vaniglia",
                  webcolour:"#FFFF42",
                  size: 250,
-                 price: 15.66)
+                 price: 15.66,
+                 product_pic: "vanille.png")
   Product.create(name:"Chiaroscuro Irish cream",
                  webcolour:"#137700",
                  size: 250,
@@ -136,7 +145,8 @@ puts "creating the database of MKFLR coffees"
   Product.create(name:"50/50 Gran Crema 18pcs",
                  webcolour:"#D6321F",
                  size: 250,
-                 price: 20.22)
+                 price: 20.22,
+                 product_pic: "vanille.png")
   Product.create(name:"Decaf 18pcs",
                  webcolour:"#849AC2",
                  size: 250,
