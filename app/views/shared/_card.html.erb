@@ -2,7 +2,9 @@
   <div class="card mkflr_card">
     <div class="mkflr_card_image">
       <div class="mkflr_card_price d-flex justify-content-center align-items-center">
-        <%= product.price %> лв.
+        <p>
+          <%= product.price %> </br> лв.
+        </p>
       </div>
     </div>
     <div class="mkflr_card_colour"></div>
@@ -10,11 +12,11 @@
       <div class="mkflr_button_quickbuy">
         <%= product.name %>
       </div>
-      <div class="mkflr_quantity d-flex justify-content-center align-items-center">
-        <%= simple_form_for @order_item do |f| %>
+      <div class="d-flex justify-content-center align-items-center">
+        <%= simple_form_for @order_item, html: { class: "d-flex" } do |f| %>
           <%= f.input_field :product_id, value: product.id, as: :hidden %>
-          <%= f.input_field :quantity%>
-          <%= f.submit "Add to cart" %>
+          <%= f.input_field :quantity, label: false, error: 'Моля, въведете валидно количество ☺️', placeholder: 1, error_html: {}%>
+          <%= f.button :submit%>
         <% end %>
       </div>
     </div>
