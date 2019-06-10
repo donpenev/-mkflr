@@ -1,0 +1,59 @@
+.newsletter_box {
+  padding-left: 24px;
+  padding-right: 9px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  background-color: $floral_white;
+  color: $zin_brown;
+  font-family: 'Open Sans Condensed', sans-serif;
+  opacity: 1;
+
+  h3 {
+    color: $zin_brown;
+    font-family: 'Open Sans Condensed', sans-serif;
+    opacity: 0.35;
+  }
+  p{
+    color: $zin_brown;
+    font-family: 'Open Sans Condensed', sans-serif;
+    opacity: 0.35;
+  }
+}
+
+#new_tocontact {
+  display: flex;
+}
+
+.simple_form > #tocontact_email {
+  margin: 0px !important;
+  flex-grow: 4;
+  border: 1px solid #DEDDD4 !important;
+  background-color: $floral_white;
+  border-top-left-radius: 11px;
+  border-bottom-left-radius: 11px;
+}
+
+.mkflr_newletter_header {
+  margin: 0px;
+  padding: 6px 12px;
+}
+
+.mkflr_newletter_para {
+  margin: 0px;
+  padding: 6px 12px;
+}
+
+.mkflr_newsletter_btn{
+  padding-right: 24px;
+  padding-left: 16px;
+  flex-grow: 1;
+  color: $zin_brown;
+  opacity: 0.35;
+  border-left: 0px !important;
+  border: 1px solid #ADA59D;
+  -webkit-box-shadow: 1px 1px 2px 1px rgba(173,165,157,0.67);
+  -moz-box-shadow: 1px 1px 2px 1px rgba(173,165,157,0.67);
+  box-shadow: 1px 1px 2px 1px rgba(173,165,157,0.67);
+  border-top-right-radius: 11px;
+  border-bottom-right-radius: 11px;
+}
