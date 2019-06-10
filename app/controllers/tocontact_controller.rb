@@ -4,6 +4,7 @@ class TocontactController < ApplicationController
   def create
     @tocontact = Tocontact.create(tocontact_params)
     # redirect to home page, maybe present a modal
+    redirect_to :root
   end
 
   private
