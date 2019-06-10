@@ -1,0 +1,91 @@
+.mkflr_card {
+  margin-top: 16px;
+  margin-bottom: 8px;
+}
+
+.mkflr_card_image {
+  background-image: image_url("vanille.png");
+  background-size: cover;
+  background-position: center;
+  height: 40vh;
+  position: relative;
+  background-color: #FFFFFF;
+}
+
+.mkflr_card_colour {
+  height: 10vh;
+  background-color: $vanille_yellow;
+}
+
+.mkflr_card_price {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color:$zin_brown;
+  color: $my_white;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+}
+
+.mkflr_quantity {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color:$zin_brown;
+  color: $my_white;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+}
+
+.mkflr_button_quickbuy {
+  color: $my_white;
+  background-color: $zin_brown;
+  padding: 16px 16px;
+  margin: 16px 16px;
+  text-align: center;
+}
+
+.mkflr_buy_controls {
+  margin: 16px;
+  margin-top: 0px;
+}
+
+.mkflr_add_to_cart_light {
+  padding: 8px;
+  border: 1px solid $zin_brown;
+}
+
+.mkflr_radios_incre {
+  border: 1px solid $zin_brown;
+  border-left: 0px;
+  flex-grow: 1;
+  margin-right:16px;
+  padding: 0px !important;
+  font-size: 16px;
+  a {
+    padding: 8px;
+    text-decoration: none;
+    color: $zin_brown;
+  }
+  a:visited {
+    text-decoration: none;
+  }
+}
+
+.mkflr_radios_decre {
+  border: 1px solid $zin_brown;
+  border-right: 0px;
+  flex-grow: 1;
+  padding: 0px !important;
+    a {
+    padding: 8px;
+    text-decoration: none;
+    color: $zin_brown;
+  }
+  a:visited {
+    text-decoration: none;
+  }
+}

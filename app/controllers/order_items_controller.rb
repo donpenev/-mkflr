@@ -4,6 +4,7 @@ class OrderItemsController < ApplicationController
   #The [:order_id] value will remain until the browser's cache is cleared
 
   def create
+    raise
     @order = current_order
     @item = @order.order_items.new(item_params)
     @order.save
