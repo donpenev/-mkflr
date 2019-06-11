@@ -1,23 +1,30 @@
 .mkflr_card {
   margin-top: 16px;
   margin-bottom: 8px;
-  -webkit-box-shadow: 2px 2px 1px 1px rgba(35,9,3,0.1);
-  -moz-box-shadow: 2px 2px 1px 1px rgba(35,9,3,0.1);
-  box-shadow: 2px 2px 1px 1px rgba(35,9,3,0.1);
+  -webkit-box-shadow: 2px 2px 1px 1px rgba(35,9,3,0.27);
+  -moz-box-shadow: 2px 2px 1px 1px rgba(35,9,3,0.27);
+  box-shadow: 2px 2px 1px 1px rgba(35,9,3,0.27);
+  border-radius: 2px;
 }
 
-.mkflr_card_image {
-  background-image: image_url("vanille.png");
-  background-size: cover;
+.mkflr_product_pic{
+  img {
+  background-size: fit;
+  max-width:100%;
+  max-height:100%;
+  width: auto;
   background-position: center;
-  height: 40vh;
-  position: relative;
-  background-color: #FFFFFF;
+  background-color: $my_white;
+  padding: 8px 0px;
+  }
+}
+
+.mkflr_card_infos {
+  height: 20vh;
 }
 
 .mkflr_card_colour {
   height: 10vh;
-  background-color: $vanille_yellow;
 }
 
 .mkflr_card_price {
@@ -39,6 +46,38 @@
   }
 }
 
+
+.mkflr_quickbuy_heading {
+  color: $my_white;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  background-color: $zin_brown;
+  padding: 8px 8px;
+  margin: 16px 16px;
+  text-align: center;
+  height: 8vh;
+  border-radius: 2px;
+}
+
+.mkflr_buy_controls {
+  margin: 16px;
+  margin-top: 0px;
+}
+
+.mkflr_card_cart_controls_btn {
+  border: 1px solid $zin_brown;
+  margin-left: 16px;
+}
+
+.mkflr_card_cart_controls_btn_quantity {
+  padding:5px;
+  border: 1px solid $zin_brown;
+}
+
+.mkflr_card_cart_controls{
+  margin: 16px;
+}
+
 .mkflr_quantity {
   width: 50px;
   height: 50px;
@@ -48,25 +87,10 @@
   font-family: 'Caveat', cursive;
   font-weight: 500;
 }
-
-.mkflr_button_quickbuy {
-  color: $my_white;
-  background-color: $zin_brown;
-  padding: 16px 16px;
-  margin: 16px 16px;
-  text-align: center;
-}
-
-.mkflr_buy_controls {
-  margin: 16px;
-  margin-top: 0px;
-}
-
 .mkflr_add_to_cart_light {
   padding: 8px;
   border: 1px solid $zin_brown;
 }
-
 .mkflr_radios_incre {
   border: 1px solid $zin_brown;
   border-left: 0px;
@@ -83,7 +107,6 @@
     text-decoration: none;
   }
 }
-
 .mkflr_radios_decre {
   border: 1px solid $zin_brown;
   border-right: 0px;
