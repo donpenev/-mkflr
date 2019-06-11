@@ -16,11 +16,11 @@
       <div class="d-flex mkflr_quickbuy_heading justify-content-center align-items-center">
         <%= product.name %>
       </div>
-      <div class="d-flex justify-content-center align-items-center">
-        <%= simple_form_for @order_item, html: { class: "d-flex" } do |f| %>
-        <%= f.input_field :product_id, value: product.id, as: :hidden %>
-        <%= f.input_field :quantity, label: false, error: 'Моля, въведете валидно количество ☺️', placeholder: 1, error_html: {}%>
-        <%= f.button :submit%>
+      <div class="mkflr_card_cart_controls d-flex justify-content-center align-items-center">
+        <%= simple_form_for @order_item, html: { class: "d-flex justify-content-between align-items-center" } do |f| %>
+          <%= f.input_field :product_id, value: product.id, as: :hidden %>
+          <%= f.input_field :quantity, label: false, error: 'Моля, въведете валидно количество ☺️', placeholder: 1, error_html: {} ,class: "mkflr_card_cart_controls_btn_quantity"%>
+          <%= f.button :submit, "добави в 🛒" ,class: "mkflr_card_cart_controls_btn" %>
         <% end %>
       </div>
     </div>

@@ -1,9 +1,9 @@
 .mkflr_card {
   margin-top: 16px;
   margin-bottom: 8px;
-  -webkit-box-shadow: 2px 2px 1px 1px rgba(35,9,3,0.1);
-  -moz-box-shadow: 2px 2px 1px 1px rgba(35,9,3,0.1);
-  box-shadow: 2px 2px 1px 1px rgba(35,9,3,0.1);
+  -webkit-box-shadow: 2px 2px 1px 1px rgba(35,9,3,0.27);
+  -moz-box-shadow: 2px 2px 1px 1px rgba(35,9,3,0.27);
+  box-shadow: 2px 2px 1px 1px rgba(35,9,3,0.27);
   border-radius: 2px;
 }
 
@@ -46,15 +46,6 @@
   }
 }
 
-.mkflr_quantity {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  background-color:$zin_brown;
-  color: $my_white;
-  font-family: 'Caveat', cursive;
-  font-weight: 500;
-}
 
 .mkflr_quickbuy_heading {
   color: $my_white;
@@ -73,11 +64,33 @@
   margin-top: 0px;
 }
 
+.mkflr_card_cart_controls_btn {
+  border: 1px solid $zin_brown;
+  margin-left: 16px;
+}
+
+.mkflr_card_cart_controls_btn_quantity {
+  padding:5px;
+  border: 1px solid $zin_brown;
+}
+
+.mkflr_card_cart_controls{
+  margin: 16px;
+}
+
+.mkflr_quantity {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color:$zin_brown;
+  color: $my_white;
+  font-family: 'Caveat', cursive;
+  font-weight: 500;
+}
 .mkflr_add_to_cart_light {
   padding: 8px;
   border: 1px solid $zin_brown;
 }
-
 .mkflr_radios_incre {
   border: 1px solid $zin_brown;
   border-left: 0px;
@@ -94,7 +107,6 @@
     text-decoration: none;
   }
 }
-
 .mkflr_radios_decre {
   border: 1px solid $zin_brown;
   border-right: 0px;
