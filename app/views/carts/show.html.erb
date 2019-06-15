@@ -5,7 +5,7 @@
       <div class="mkflr_cart_items"></div>
         <% if @order_items.any? %>
           <% @order_items.each do |item| %>
-            <p><%= item.product.name %> | <%= link_to "Delete", order_items_path(item), :data => {:confirm => "You sure?", :method => "delete"} %></p>
+            <%= render "shared/cart_card", item: item %>
           <% end %>
         <% else %>
           <p>Your shopping cart is empty.</p>
