@@ -1,11 +1,13 @@
 <div class="container">
   <div class="row">
-    <div class="col-xs-12">
-      <div class="mkflr_cart_header"></div>
+    <div class="col-12">
+      <div class="mkflr_cart_header">
+        <h1>Във вашата количка има:</h1>
+      </div>
       <div class="mkflr_cart_items"></div>
         <% if @order_items.any? %>
           <% @order_items.each do |item| %>
-            <p><%= item.product.name %> | <%= link_to "Delete", order_items_path(item), :data => {:confirm => "You sure?", :method => "delete"} %></p>
+            <%= render "shared/cart_card", item: item %>
           <% end %>
         <% else %>
           <p>Your shopping cart is empty.</p>

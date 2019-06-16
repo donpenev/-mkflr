@@ -14,17 +14,26 @@
   max-height:100%;
   width: auto;
   background-position: center;
-  background-color: $my_white;
-  padding: 8px 0px;
+  background-color: $union_card;
+  padding: 24px 0px;
   }
 }
 
 .mkflr_card_infos {
-  height: 20vh;
+  height: 21vh;
 }
 
 .mkflr_card_colour {
-  height: 10vh;
+  height: 13vh;
+}
+
+.mkflr_card_heading {
+  color: $union_card;
+  font-family: 'Comfortaa', cursive;
+  font-weight: 600;
+  font-size: 24px;
+  text-align: center;
+  // letter-spacing: 1px;
 }
 
 .mkflr_card_price {
@@ -45,7 +54,6 @@
     text-align: center;
   }
 }
-
 
 .mkflr_quickbuy_heading {
   color: $my_white;
@@ -86,38 +94,4 @@
   color: $my_white;
   font-family: 'Caveat', cursive;
   font-weight: 500;
-}
-.mkflr_add_to_cart_light {
-  padding: 8px;
-  border: 1px solid $zin_brown;
-}
-.mkflr_radios_incre {
-  border: 1px solid $zin_brown;
-  border-left: 0px;
-  flex-grow: 1;
-  margin-right:16px;
-  padding: 0px !important;
-  font-size: 16px;
-  a {
-    padding: 8px;
-    text-decoration: none;
-    color: $zin_brown;
-  }
-  a:visited {
-    text-decoration: none;
-  }
-}
-.mkflr_radios_decre {
-  border: 1px solid $zin_brown;
-  border-right: 0px;
-  flex-grow: 1;
-  padding: 0px !important;
-    a {
-    padding: 8px;
-    text-decoration: none;
-    color: $zin_brown;
-  }
-  a:visited {
-    text-decoration: none;
-  }
 }

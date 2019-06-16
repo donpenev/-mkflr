@@ -59,7 +59,7 @@ puts "-----------------------------------------------------"
 puts "creating the database of MKFLR coffees"
 
   Product.create(name:"Chiaroscuro 100 percent Arabica blend",
-                 webcolour:"#D3C48E",
+                 webcolour:"#B98459",
                  size: 250,
                  price: 15.66,
                  product_pic: "vanille.png",

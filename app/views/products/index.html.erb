@@ -1,4 +1,22 @@
-<%= render "shared/category_label"%>
+<!-- found at https://mdbootstrap.com/docs/jquery/javascript/carousel/ -->
+<!-- Carousel Wrapper -->
+<div id="carousel-example-2" class="carousel carousel_product_index" data-ride="carousel">
+  <!--Slides-->
+  <div class="carousel-inner" role="listbox">
+    <div class="carousel-item active">
+      <div class="view">
+        <%= image_tag "product_index_banner.jpg", class: "d-block w-100 mkflr_gradient", alt: "First slide"%>
+      </div>
+      <div class="carousel-caption">
+        <h3 class="h3-responsive">Light mask</h3>
+        <p>First text</p>
+      </div>
+    </div>
+  </div>
+  <!--/.Slides-->
+</div>
+<!--/.Carousel Wrapper-->
+
 <div class="container">
   <div class="row">
     <% @products.each do |product| %>
