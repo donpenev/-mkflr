@@ -1,0 +1,37 @@
+.mkflr_cart_card {
+  width: 100%;
+  // height:
+  margin: 8px 0px;
+  padding: 8px 0px;
+  display: flex;
+}
+
+.mkflr_cart_card_photo{
+  // background-size: fit;
+  flex-grow: 1;
+  a{
+    // background-size: fit;
+    img {
+      background-size: fit;
+      max-width:100%;
+      max-height:100px;
+      width: auto;
+      height: auto;
+      background-position: center;
+      background-color: $my_white;
+      padding: 8px 0px;
+    }
+  }
+}
+
+.mkflr_cart_card_info {
+  flex-grow: 5;
+}
+
+.mkflr_cart_card_quantity {
+  flex-grow: 1;
+}
+
+.mkflr_cart_card_price{
+  flex-grow: 1;
+}

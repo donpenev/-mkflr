@@ -10,11 +10,13 @@
         <% end %>
       <% end %>
   </div>
-  <div class="mkflr_cart_card_info">
-    <h2 class="mkflr_cart_card_info_header"><%= item.product.name %></h2>
-    <p class="mkflr_cart_card_info_desc"><%= item.product.category %></p>
+  <div class="mkflr_cart_card_info ">
+    <h2 class="mkflr_cart_card_info_header align-items-center justify-content-center d-flex"><%= item.product.name %></h2>
+    <p class="mkflr_cart_card_info_desc d-flex"><%= item.product.category %></p>
   </div>
-  <p><%= link_to "Delete", order_items_path(item), :data => {:confirm => "You sure?", :method => "delete"} %></p>
-  <div class="mkflr_cart_card_quantity"><%= item.quantity %></div>
+  <div class="mkflr_cart_card_quantity">
+    <p><%= item.quantity %></p>
+    <p><%= link_to "Delete", order_items_path(item), :data => {:confirm => "You sure?", :method => "delete"} %></p>
+  </div>
   <div class="mkflr_cart_card_price"></div>
 </div>

@@ -1,7 +1,9 @@
 <div class="container">
   <div class="row">
-    <div class="col-xs-12">
-      <div class="mkflr_cart_header"></div>
+    <div class="col-12">
+      <div class="mkflr_cart_header">
+        <h1>Във вашата количка има:</h1>
+      </div>
       <div class="mkflr_cart_items"></div>
         <% if @order_items.any? %>
           <% @order_items.each do |item| %>
