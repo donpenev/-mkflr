@@ -1,3 +1,13 @@
+.mkflr_cart_container {
+ background-color: $union_card;
+ margin-top: 48px;
+ margin-bottom: 48px;
+ -moz-box-shadow: 2px 2px 7px 3px rgba(196,196,196,0.65);
+ -webkit-box-shadow: 2px 2px 7px 3px rgba(196,196,196,0.65);
+ box-shadow: 2px 2px 7px 3px rgba(196,196,196,0.65);
+ min-height: 55vh;
+}
+
 .mkflr_cart_card {
   width: 100%;
   // height:
@@ -18,7 +28,7 @@
       width: auto;
       height: auto;
       background-position: center;
-      background-color: $my_white;
+      background-color: $union_card;
       padding: 8px 0px;
     }
   }
