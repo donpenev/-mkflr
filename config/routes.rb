@@ -7,7 +7,7 @@ Rails.application.routes.draw do
   # get '/patients/:id', to: 'patients#show', as: 'patient' and this in the corresponding view:
   # <%= link_to 'Patient Record', patient_path(@patient) %>
 
-  post '/order_items', to: 'order_items#create', as: 'order_items'
+  resource :order_items, only: [:create, :destroy]
 
   post '/tocontact', to: 'tocontact#create', as: 'tocontacts'
 
