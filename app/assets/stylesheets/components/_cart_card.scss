@@ -1,3 +1,13 @@
+.mkflr_cart_container {
+ background-color: $union_card;
+ margin-top: 48px;
+ margin-bottom: 48px;
+ -moz-box-shadow: 2px 2px 7px 3px rgba(196,196,196,0.65);
+ -webkit-box-shadow: 2px 2px 7px 3px rgba(196,196,196,0.65);
+ box-shadow: 2px 2px 7px 3px rgba(196,196,196,0.65);
+ min-height: 55vh;
+}
+
 .mkflr_cart_card {
   width: 100%;
   // height:
@@ -8,7 +18,7 @@
 
 .mkflr_cart_card_photo{
   // background-size: fit;
-  flex-grow: 1;
+  flex-grow: 0;
   a{
     // background-size: fit;
     img {
@@ -18,8 +28,8 @@
       width: auto;
       height: auto;
       background-position: center;
-      background-color: $my_white;
-      padding: 8px 0px;
+      background-color: $union_card;
+      padding: 0px 0px;
     }
   }
 }
@@ -28,10 +38,60 @@
   flex-grow: 5;
 }
 
-.mkflr_cart_card_quantity {
+.mkflr_cart_card_quantity_controls {
   flex-grow: 1;
+  text-align: center;
+  a {
+    padding: 8px;
+    text-decoration: none;
+    color: $zin_brown;
+  }
+  a:visited {
+    text-decoration: none;
+  }
 }
 
 .mkflr_cart_card_price{
   flex-grow: 1;
+}
+
+.mkflr_cart_card_quantity_controls_button {
+  // border: 2px solid $zin_brown;
+  padding: 2px;
+  margin: 0px;
+  // -webkit-box-shadow: 1px 1px 2px 1px rgba(173,165,157,0.67);
+  // -moz-box-shadow: 1px 1px 2px 1px rgba(173,165,157,0.67);
+  // box-shadow: 1px 1px 2px 1px rgba(173,165,157,0.67);
+}
+
+.mkflr_cart_card_quantity_controls_increase{
+  // border-top-right-radius: 11px;
+  // border-bottom-right-radius: 11px;
+  border-left: 0px;
+  flex-grow: 0;
+  margin: 0px;
+}
+
+.mkflr_cart_card_quantity_controls_decrease{
+  // border-top-left-radius: 11px;
+  // border-bottom-left-radius: 11px;
+  border-right: 0px;
+  flex-grow: 0;
+  margin: 0px;
+}
+
+.mkflr_cart_card_quantity_controls_display{
+  padding: 16px;
+  flex-grow: 0;
+  // max-width: 32px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  border: 2px solid $zin_brown;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.mkflr_cart_cart_quantity_controls_delete{
+  flex-grow: 0;
 }

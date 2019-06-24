@@ -2,7 +2,7 @@
   <div class="card mkflr_card">
     <div class="mkflr_card_price d-flex align-items-center justify-content-center" style="color: <%= product.webcolour %>; border-color: <%= product.webcolour %>">
       <p>
-        <%= number_to_currency product.price %> лв.
+        <%= number_to_currency (product.price) %>
       </p>
     </div>
     <div class="mkflr_product_pic">
@@ -22,11 +22,24 @@
       </h5>
     </div>
     <div class="mkflr_card_infos">
-      <div class="mkflr_card_cart_controls d-flex justify-content-center align-items-center">
-        <%= simple_form_for @order_item, html: { class: "d-flex justify-content-between align-items-center" } do |f| %>
+
+      <div class="mkflr_card_cart_controls">
+        <%= simple_form_for @order_item, html: { class: "d-flex align-items-center justify-content-center", style: "" } do |f| %>
+          <div class="mkflr_card_cart_controls_decrease">
+            <i class="fas fa-minus"></i>
+          </div>
           <%= f.input_field :product_id, value: product.id, as: :hidden %>
-          <%= f.input_field :quantity, label: false, error: 'Моля, въведете валидно количество ☺️', placeholder: 1, error_html: {} ,class: "mkflr_card_cart_controls_btn_quantity"%>
+          <%= f.input_field :quantity, label: false, error: 'Моля, въведете валидно количество ☺️', error_html: {} ,class: "mkflr_card_cart_controls_btn_quantity", input_html: { value: 1 }%>
+          <div class="mkflr_card_cart_controls_increase">
+             <i class="fas fa-plus"></i>
+          </div>
           <%= f.button :submit, "добави в 🛒" ,class: "mkflr_card_cart_controls_btn" %>
+        <% end %>
+      </div>
+      <p class="mkflr_card_infos_or_text">или</p>
+      <div class="mkflr_card_infos_learn_more_btn" style="background-color: <%= product.webcolour %>" >
+        <%= link_to product_path(product) do %>
+          научи повече...
         <% end %>
       </div>
     </div>
