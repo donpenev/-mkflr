@@ -14,9 +14,25 @@
     <h2 class="mkflr_cart_card_info_header align-items-center d-flex"><%= item.product.name %></h2>
     <p class="mkflr_cart_card_info_desc d-flex"><%= item.product.category %></p>
   </div>
-  <div class="mkflr_cart_card_quantity">
-    <p><%= item.quantity %></p>
-    <p><%= link_to "Delete", order_items_path(order_item_id: item.id), :data => {:confirm => "You sure?", :method => "delete"} %></p>
+  <div class="mkflr_cart_card_quantity_controls d-flex align-items-center">
+    <div class="mkflr_cart_card_quantity_controls_decrease mkflr_cart_card_quantity_controls_button">
+      <%= link_to "", class: "" do %>
+        <i class="fas fa-minus"></i>
+      <% end %>
+    </div>
+    <div class="mkflr_cart_card_quantity_controls_display">
+      <%= item.quantity %>
+    </div>
+    <div class="mkflr_cart_card_quantity_controls_increase mkflr_cart_card_quantity_controls_button">
+      <%= link_to "", class: "" do %>
+        <i class="fas fa-plus"></i>
+      <% end %>
+    </div>
+    <div class="mkflr_cart_cart_quantity_controls_delete">
+      <%= link_to "X", order_items_path(order_item_id: item.id), :data =>{:confirm => "You sure?", :method => "delete"}%>
+    </div>
   </div>
-  <div class="mkflr_cart_card_price"></div>
+  <div class="mkflr_cart_card_price d-flex align-items-center justify-content-center">
+    <%= item.quantity %>
+  </div>
 </div>

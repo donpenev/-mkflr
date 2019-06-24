@@ -19,10 +19,6 @@
   }
 }
 
-.mkflr_card_infos {
-  height: 21vh;
-}
-
 .mkflr_card_colour {
   height: 13vh;
 }
@@ -33,46 +29,65 @@
   font-weight: 600;
   font-size: 24px;
   text-align: center;
+  margin: 0px;
   // letter-spacing: 1px;
 }
 
-.mkflr_buy_controls {
-  margin: 16px;
-  margin-top: 0px;
+.mkflr_card_infos {
+  height: 21vh;
+}
+
+.mkflr_card_cart_controls{
+  margin: 16px 8px 8px 8px;
+}
+
+.mkflr_card_cart_controls_decrease{
+  i {
+    padding:8px;
+  }
+  flex-grow: 0;
+}
+
+.mkflr_card_cart_controls_increase{
+  i {
+    padding:8px;
+  }
+  flex-grow: 0;
+}
+
+.mkflr_card_cart_controls_btn_quantity {
+  border: 1px solid $zin_brown;
+  -moz-box-shadow: 2px 2px 7px 3px rgba(196,196,196,0.77);
+  -webkit-box-shadow: 2px 2px 7px 3px rgba(196,196,196,0.77);
+  box-shadow: 2px 2px 7px 3px rgba(196,196,196,0.77);
+  height: 38px;
+  flex-grow: 0;
+  flex-shrink: 1;
+  width: 48px;
+  margin: 0px 4px;
 }
 
 .mkflr_card_cart_controls_btn {
   border: 1px solid $zin_brown;
-  margin-left: 16px;
-}
-
-.mkflr_card_cart_controls_btn_quantity {
-  padding:5px;
-  border: 1px solid $zin_brown;
-}
-
-.mkflr_card_cart_controls{
-  margin: 16px;
-}
-
-.mkflr_quantity {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  background-color:$zin_brown;
-  color: $my_white;
-  font-family: 'Caveat', cursive;
-  font-weight: 500;
+  -moz-box-shadow: 2px 2px 7px 3px rgba(196,196,196,0.77);
+  -webkit-box-shadow: 2px 2px 7px 3px rgba(196,196,196,0.77);
+  box-shadow: 2px 2px 7px 3px rgba(196,196,196,0.77);
+  flex-grow: 0;
+  flex-shrink: 1;
+  margin: 0px 8px;
 }
 
 .mkflr_card_price {
   position: absolute;
-  right: 10px;
-  top: 10px;
+  right: 8px;
+  top: 8px;
   width: 54px;
   height: 54px;
   border-radius: 50%;
   border: 2px solid;
+  -moz-box-shadow: 2px 2px 7px 3px rgba(196,196,196,0.23);
+  -webkit-box-shadow: 2px 2px 7px 3px rgba(196,196,196,0.23);
+  box-shadow: 2px 2px 7px 3px rgba(196,196,196,0.23);
   // background-color:$union_card;
   // color: $my_white;
   font-family: 'Open Sans Condensed', sans-serif;
@@ -84,5 +99,30 @@
     font-size: 16px;
     text-align: center;
     line-height: 1.1;
+  }
+}
+
+.mkflr_card_infos_or_text{
+  margin: 0px;
+  text-align: center;
+}
+
+.mkflr_card_infos_learn_more_btn{
+  -moz-box-shadow: 2px 2px 7px 3px rgba(196,196,196,0.77);
+  -webkit-box-shadow: 2px 2px 7px 3px rgba(196,196,196,0.77);
+  box-shadow: 2px 2px 7px 3px rgba(196,196,196,0.77);
+  border-radius: 1px;
+  margin: 16px;
+  margin-top: 8px;
+  padding: 8px;
+  text-align: center;
+  color: $union_card;
+  a {
+    color: $union_card;
+    text-decoration: none;
+    padding: 8px 48px;
+  }
+  a:visited {
+    color: $union_card;
   }
 }
