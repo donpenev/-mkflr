@@ -4,7 +4,8 @@
       <div class="mkflr_cart_header">
         <h1>Във вашата количка има:</h1>
       </div>
-      <div class="mkflr_cart_items"></div>
+      <div class="mkflr_cart_top_line"></div>
+      <div class="mkflr_cart_items">
         <% if @order_items.any? %>
           <% @order_items.each do |item| %>
             <%= render "shared/cart_card", item: item %>
@@ -12,6 +13,9 @@
         <% else %>
           <p>Your shopping cart is empty.</p>
         <% end %>
+      </div>
+      <div class="mkflr_cart_bottom_line"></div>
+
     </div>
   </div>
 </div>

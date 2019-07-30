@@ -1,10 +1,12 @@
 <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
-  <div class="card mkflr_card">
+  <div class="card mkflr_card" id="mkflr_card_<%= product.id %>">
+
     <div class="mkflr_card_price d-flex align-items-center justify-content-center" style="color: <%= product.webcolour %>; border-color: <%= product.webcolour %>">
       <p>
         <%= number_to_currency (product.price) %>
       </p>
     </div>
+
     <div class="mkflr_product_pic">
       <% if product.product_pic.blank? %>
         <%= link_to product_path(product) do %>
@@ -16,32 +18,50 @@
         <% end %>
       <% end %>
     </div>
+
     <div class="mkflr_card_colour d-flex justify-content-center align-items-center" style="background-color: <%= product.webcolour %>">
       <h5 class="mkflr_card_heading">
         <%= product.name %>
       </h5>
     </div>
+
     <div class="mkflr_card_infos">
 
-      <div class="mkflr_card_cart_controls">
+      <!-- hidden with display:none in the css -->
+      <div class="mkflr_card_cart_controls" id="mkflr_product_controls_<%= product.id%>">
         <%= simple_form_for @order_item, html: { class: "d-flex align-items-center justify-content-center", style: "" } do |f| %>
-          <div class="mkflr_card_cart_controls_decrease">
-            <i class="fas fa-minus"></i>
-          </div>
-          <%= f.input_field :product_id, value: product.id, as: :hidden %>
-          <%= f.input_field :quantity, label: false, error: 'Моля, въведете валидно количество ☺️', error_html: {} ,class: "mkflr_card_cart_controls_btn_quantity", input_html: { value: 1 }%>
-          <div class="mkflr_card_cart_controls_increase">
-             <i class="fas fa-plus"></i>
-          </div>
-          <%= f.button :submit, "добави в 🛒" ,class: "mkflr_card_cart_controls_btn" %>
+        <div class="mkflr_card_cart_controls_decrease">
+          <i class="fas fa-minus"></i>
+        </div>
+        <%= f.input_field :product_id, value: product.id, as: :hidden %>
+        <%= f.input_field :quantity, label: false, error: 'Моля, въведете валидно количество ☺️', error_html: {} ,class: "mkflr_card_cart_controls_btn_quantity", input_html: { value: 1 }, value: 1%>
+        <div class="mkflr_card_cart_controls_increase">
+          <i class="fas fa-plus"></i>
+        </div>
+        <%= f.button :submit, "добави в 🛒" ,class: "mkflr_card_cart_controls_btn" %>
         <% end %>
       </div>
-      <p class="mkflr_card_infos_or_text">или</p>
-      <div class="mkflr_card_infos_learn_more_btn" style="background-color: <%= product.webcolour %>" >
+
+      <!-- hidden with display:none in the css -->
+      <p class="mkflr_card_infos_or_text" id="mkflr_product_p_<%= product.id%>">или</p>
+
+      <!-- hidden with display:none in the css -->
+      <div class="mkflr_card_infos_learn_more_btn" id="mkflr_product_btn_<%= product.id%>" style="background-color: <%= product.webcolour %>">
         <%= link_to product_path(product) do %>
           научи повече...
         <% end %>
       </div>
+
+      <div class="mkflr_card_infos_blend" id="mkflr_product_blend_<%= product.id%>" style="color: <%= product.webcolour %>">
+        Арабика 100%
+      </div>
+
+      <p class="mkflr_card_infos_notes_text" id="mkflr_product_notes_<%= product.id%>" style="color: <%= product.webcolour %>">с нотки на</p>
+
+      <div class="mkflr_card_infos_flavour" id="mkflr_product_flavour_<%= product.id%>" style="color: <%= product.webcolour %>">
+        ванилия, шоколад, какао
+      </div>
+
     </div>
   </div>
 </div>

@@ -1,0 +1,19 @@
+<div class="mkflr_card_cart_controls" id="mkflr_product_controls_<%= product.id %>">
+  <%= simple_form_for @order_item, html: { class: "d-flex align-items-center justify-content-center", style: "" } do |f| %>
+  <div class="mkflr_card_cart_controls_decrease">
+    <i class="fas fa-minus"></i>
+  </div>
+  <%= f.input_field :product_id, value: product.id, as: :hidden %>
+  <%= f.input_field :quantity, label: false, error: 'Моля, въведете валидно количество ☺️', error_html: {} ,class: "mkflr_card_cart_controls_btn_quantity", input_html: { value: 1 }%>
+  <div class="mkflr_card_cart_controls_increase">
+    <i class="fas fa-plus"></i>
+  </div>
+  <%= f.button :submit, "добави в 🛒" ,class: "mkflr_card_cart_controls_btn" %>
+  <% end %>
+</div>
+<p class="mkflr_card_infos_or_text" id="mkflr_product_p_<%= product.id%>">или</p>
+<div class="mkflr_card_infos_learn_more_btn" id="mkflr_product_btn_<%= product.id %>" style="background-color: <%= product.webcolour %>">
+  <%= link_to product_path(product) do %>
+  научи повече...
+  <% end %>
+</div>

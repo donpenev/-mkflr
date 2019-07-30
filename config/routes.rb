@@ -15,4 +15,6 @@ Rails.application.routes.draw do
 
   resources :products, only: [:index, :show]
 
+  patch '/orders', to: 'orders#edit', as: 'order'
+
 end

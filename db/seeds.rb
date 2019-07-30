@@ -63,7 +63,8 @@ puts "creating the database of MKFLR coffees"
                  size: 250,
                  price: 15.66,
                  product_pic: "vanille.png",
-                 category: "Chiaroscuro оригинални кафе рецепти")
+                 category: "Chiaroscuro оригинални кафе рецепти",
+                 cat: "csblends")
 
   Product.create(name:"Decaffeinato CO2",
                  webcolour:"#D7CABC",
