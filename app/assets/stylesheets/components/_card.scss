@@ -39,6 +39,7 @@
 
 .mkflr_card_cart_controls{
   margin: 16px 8px 8px 8px;
+  display: none;
 }
 
 .mkflr_card_cart_controls_decrease{
@@ -65,6 +66,7 @@
   flex-shrink: 1;
   width: 48px;
   margin: 0px 4px;
+  text-align: center;
 }
 
 .mkflr_card_cart_controls_btn {
@@ -105,6 +107,7 @@
 .mkflr_card_infos_or_text{
   margin: 0px;
   text-align: center;
+  display: none;
 }
 
 .mkflr_card_infos_learn_more_btn{
@@ -125,4 +128,29 @@
   a:visited {
     color: $union_card;
   }
+  display: none;
+}
+
+.mkflr_card_infos_blend {
+  margin-top: 8px;
+  text-align: center;
+  font-family: 'Amatic SC', cursive;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.mkflr_card_infos_notes_text {
+  margin-top: 8px;
+  margin-bottom: 0px;
+  text-align: center;
+  font-family: 'Caveat', cursive;
+  font-size: 22px;
+}
+
+.mkflr_card_infos_flavour{
+  margin-top: 8px;
+  text-align: center;
+  font-family: 'Amatic SC', cursive;
+  font-size: 24px;
+  font-weight: 700;
 }
