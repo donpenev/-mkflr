@@ -62,198 +62,225 @@ puts "creating the database of MKFLR coffees"
                  webcolour:"#B98459",
                  size: 250,
                  price: 15.66,
-                 product_pic: "vanille.png",
-                 category: "Chiaroscuro оригинални кафе рецепти",
-                 cat: "csblends")
+                 product_pic: "cs_100_arabica.jpg",
+                 category: "Chiaroscuro оригинални кафе бленди",
+                 ctgry: "csorigblends")
 
   Product.create(name:"Decaffeinato CO2",
                  webcolour:"#D7CABC",
                  size: 250,
                  price: 20.22,
-                 product_pic: "vanille.png",
-                 category: "Chiaroscuro оригинални кафе рецепти")
+                 product_pic: "cs_decaf_CO2.jpg",
+                 category: "Chiaroscuro оригинални кафе бленди",
+                 ctgry: "csorigblends")
 
   Product.create(name:"Chiaroscuro con JBM",
                  webcolour:"#0223A0",
                  size: 250,
                  price: 20.22,
-                 product_pic: "vanille.png",
-                 category: "Chiaroscuro оригинални кафе рецепти")
+                 product_pic: "cs_jbm.jpg",
+                 category: "Chiaroscuro оригинални кафе бленди",
+                 ctgry: "csorigblends")
 
   Product.create(name:"Costarica Tournon",
                  webcolour:"#17C2AD",
                  size: 250,
                  price: 15.66,
-                 product_pic: "vanille.png",
-                 category: "Chiaroscuro кафе с определен произход")
+                 product_pic: "cs_costarica.jpg",
+                 category: "Chiaroscuro кафе с определен произход",
+                 ctgry: "csorigins")
 
   Product.create(name:"Guatemala Antigua pastores",
                  webcolour:"#4693CA",
                  size: 250,
                  price: 15.66,
-                 product_pic: "vanille.png",
-                 category: "Chiaroscuro кафе с определен произход")
+                 product_pic: "cs_guatemala.jpg",
+                 category: "Chiaroscuro кафе с определен произход",
+                 ctgry: "csorigins")
 
   Product.create(name:"Mexico Altura",
                  webcolour:"#0E6F25",
                  size: 250,
                  price: 15.66,
-                 product_pic: "vanille.png",
-                 category: "Chiaroscuro кафе с определен произход")
+                 product_pic: "cs_mexico.jpg",
+                 category: "Chiaroscuro кафе с определен произход",
+                 ctgry: "csorigins")
 
   Product.create(name:"Santo Domingo Barahona",
                  webcolour:"#09EFEF",
                  size: 250,
                  price: 15.66,
-                 product_pic: "vanille.png",
-                 category: "Chiaroscuro кафе с определен произход")
+                 product_pic: "cs_santo_domingo.jpg",
+                 category: "Chiaroscuro кафе с определен произход",
+                 ctgry: "csorigins")
 
   Product.create(name:"Tanzania Robusta AB",
                  webcolour:"#D9050B",
                  size: 250,
                  price: 15.66,
-                 product_pic: "vanille.png",
-                 category: "Chiaroscuro кафе с определен произход")
+                 product_pic: "cs_tanzania.jpg",
+                 category: "Chiaroscuro кафе с определен произход",
+                 ctgry: "csorigins")
 
   Product.create(name:"Galapagos Organic San Cristobal",
                  webcolour:"#E6462C",
                  size: 250,
                  price: 15.66,
-                 product_pic: "vanille.png",
-                 category: "Chiaroscuro кафе отгледано в екзотични кафе ферми")
+                 product_pic: "cs_galapagos.jpg",
+                 category: "Chiaroscuro кафе отгледано в екзотични кафе ферми",
+                 ctgry: "csfarms")
 
   Product.create(name:"Nepal Mount Everest Supreme organic",
                  webcolour:"#DCE4EA",
                  size: 250,
                  price: 15.66,
-                 product_pic: "vanille.png",
-                 category: "Chiaroscuro кафе отгледано в екзотични кафе ферми")
+                 product_pic: "cs_mount_everest.jpg",
+                 category: "Chiaroscuro кафе отгледано в екзотични кафе ферми",
+                 ctgry: "csfarms")
 
   Product.create(name:"Puertorico Yauco Selecto",
                  webcolour:"#F686B1",
                  size: 250,
                  price: 15.66,
                  product_pic: "vanille.png",
-                 category: "Chiaroscuro най-ценните кафе сортове от Света")
+                 category: "Chiaroscuro най-ценните кафе сортове от Света",
+                 ctgry: "cslux")
 
   Product.create(name:"Brazil Caracolito",
                  webcolour:"#611D1C",
                  size: 250,
                  price: 15.66,
-                 product_pic: "vanille.png",
-                 category: "Chiaroscuro специални кафе зърна")
+                 product_pic: "cs_caracolito.jpg",
+                 category: "Chiaroscuro специални кафе зърна",
+                 ctgry: "csspecbeans")
 
   Product.create(name:"Mokaflor Bio Organic 100 Arabica",
                  webcolour:"#2E7C4E",
                  size: 250,
                  price: 15.66,
-                 product_pic: "vanille.png",
-                 category: "Mokaflor оранични и био кафе бленди")
+                 product_pic: "bio_organic.jpg",
+                 category: "Mokaflor оранични и био кафе бленди",
+                 ctgry: "csbio")
 
   Product.create(name:"Chiaroscuro Chocolate brandy",
                  webcolour:"#662000",
                  size: 250,
                  price: 15.66,
                  product_pic: "choco_brandy.png",
-                 category: "Chiaroscuro Flavoured Coffee - Кафе с изразен вкус")
+                 category: "Chiaroscuro Flavoured Coffee - Кафе с изразен вкус",
+                 ctgry: "csflavours")
 
   Product.create(name:"Chiaroscuro Vaniglia",
                  webcolour:"#FFFF42",
                  size: 250,
                  price: 15.66,
                  product_pic: "vanille.png",
-                 category: "Chiaroscuro Flavoured Coffee - Кафе с изразен вкус")
+                 category: "Chiaroscuro Flavoured Coffee - Кафе с изразен вкус",
+                 ctgry: "csflavours")
 
   Product.create(name:"Chiaroscuro Irish cream",
                  webcolour:"#137700",
                  size: 250,
                  price: 15.66,
                  product_pic: "irish_cream.png",
-                 category: "Chiaroscuro Flavoured Coffee - Кафе с изразен вкус")
+                 category: "Chiaroscuro Flavoured Coffee - Кафе с изразен вкус",
+                 ctgry: "csflavours")
 
   Product.create(name:"Chiaroscuro Hazelnut",
                  webcolour:"#F94F0C",
                  size: 250,
                  price: 15.66,
                  product_pic: "hazel.png",
-                 category: "Chiaroscuro Flavoured Coffee - Кафе с изразен вкус")
+                 category: "Chiaroscuro Flavoured Coffee - Кафе с изразен вкус",
+                 ctgry: "csflavours")
 
   Product.create(name:"Chiaroscuro Hazelnut and Cinammon",
                  webcolour:"#002977",
                  size: 250,
                  price: 15.66,
                  product_pic: "cinn_hazel.png",
-                 category: "Chiaroscuro Flavoured Coffee - Кафе с изразен вкус")
+                 category: "Chiaroscuro Flavoured Coffee - Кафе с изразен вкус",
+                 ctgry: "csflavours")
 
   Product.create(name:"Chiaroscuro Chocolate",
                  webcolour:"#CE1010",
                  size: 250,
                  price: 15.66,
                  product_pic: "choco.png",
-                 category: "Chiaroscuro Flavoured Coffee - Кафе с изразен вкус")
+                 category: "Chiaroscuro Flavoured Coffee - Кафе с изразен вкус",
+                 ctgry: "csflavours")
 
   Product.create(name:"100 percent Dolce Arabica - Black 18pcs",
                  webcolour:"#212121",
                  size: 250,
                  price: 20.22,
-                 product_pic: "vanille.png",
-                 category: "Mokaflor E.S.E. Дози")
+                 product_pic: "dolce_arabica_pods.jpg",
+                 category: "Mokaflor E.S.E. Дози",
+                 ctgry: "ese")
 
   Product.create(name:"50/50 Gran Crema 18pcs",
                  webcolour:"#D6321F",
                  size: 250,
                  price: 20.22,
-                 product_pic: "vanille.png",
-                 category: "Mokaflor E.S.E. Дози")
+                 product_pic: "gran_crema_pods.jpg",
+                 category: "Mokaflor E.S.E. Дози",
+                 ctgry: "ese")
 
   Product.create(name:"Decaf 18pcs",
                  webcolour:"#849AC2",
                  size: 250,
                  price: 20.22,
-                 product_pic: "vanille.png",
-                 category: "Mokaflor E.S.E. Дози")
+                 product_pic: "decaf_pods.jpg",
+                 category: "Mokaflor E.S.E. Дози",
+                 ctgry: "ese")
 
   Product.create(name:"Organic Bio Paper Pods 18pcs",
                  webcolour:"#377427",
                  size: 250,
                  price: 15.66,
-                 product_pic: "vanille.png",
-                 category: "Mokaflor E.S.E. Дози")
+                 product_pic: "organic_bio_pods.jpg",
+                 category: "Mokaflor E.S.E. Дози",
+                 ctgry: "ese")
 
   Product.create(name:"100 Dolce Arabica - Black 10 porz",
                  webcolour:"#3E3D41",
                  size: 250,
                  price: 15.66,
-                 product_pic: "vanille.png",
-                 category: "Mokaflor Капсули за Nespresso© машина")
+                 product_pic: "nespresso_arabica.jpg",
+                 category: "Mokaflor Капсули за Nespresso© машина",
+                 ctgry: "nespresso")
 
   Product.create(name:"50/50 Gran Crema - 10 porz",
                  webcolour:"#B45043",
                  size: 250,
                  price: 15.66,
-                 product_pic: "vanille.png",
-                 category: "Mokaflor Капсули за Nespresso© машина")
+                 product_pic: "nespresso_crema.jpg",
+                 category: "Mokaflor Капсули за Nespresso© машина",
+                 ctgry: "nespresso")
 
   Product.create(name:"Decaf - 10 porz",
                  webcolour:"#899DC2",
                  size: 250,
                  price: 15.66,
-                 product_pic: "vanille.png",
-                 category: "Mokaflor Капсули за Nespresso© машина")
+                 product_pic: "nespresso_decaf.jpg",
+                 category: "Mokaflor Капсули за Nespresso© машина",
+                 ctgry: "nespresso")
 
   Product.create(name:"Brazil Alta Mogiana Franca Gr 2 17/18 - 10 porz",
                  webcolour:"#48462D",
                  size: 250,
                  price: 15.66,
-                 product_pic: "vanille.png",
-                 category: "Mokaflor Капсули за Nespresso© машина")
+                 product_pic: "nespresso_brazil.jpg",
+                 category: "Mokaflor Капсули за Nespresso© машина",
+                 ctgry: "nespresso")
 
   Product.create(name:"India Monsonato Parchment Karnataka - 10 porz",
                  webcolour:"#493A30",
                  size: 250,
                  price: 15.66,
-                 product_pic: "vanille.png",
-                 category: "Mokaflor Капсули за Nespresso© машина")
+                 product_pic: "nespresso_india.jpg",
+                 category: "Mokaflor Капсули за Nespresso© машина",
+                 ctgry: "nespresso")
 
 puts "finished creting the database of MKFLR coffees"
 puts "-----------------------------------------------------"
